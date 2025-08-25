@@ -1,12 +1,33 @@
-# React + Vite
+# Task Manager Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Task Manager web application** built with **React** and **Firebase**.  
+Allows users to **sign up, log in, log out**, and access a **dashboard** for managing tasks. The dashboard is **protected** and only accessible to authenticated users.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User Authentication using **Firebase Auth**
+  - Sign Up
+  - Sign In
+  - Logout
+- **Private Dashboard** (Protected Routes)
+- Responsive design using **Tailwind CSS**
+- Clean UI and easy-to-use forms
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, React Router DOM, Tailwind CSS
+- **Backend / Auth:** Firebase Authentication
+- **State Management:** React Hooks (`useState`, `useEffect`)
+
+## Project Structure
+
+src/
+├── components/
+│ └── Navbar.jsx
+├── pages/
+│ ├── Login.jsx
+│ ├── SignUp.jsx
+│ └── Dashboard.jsx
+├── firebase.js
+├── App.jsx
+└── index.jsx
